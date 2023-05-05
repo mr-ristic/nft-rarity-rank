@@ -24,10 +24,9 @@ const traitFrequency = {};
   const collection = await fetchTokens()
   
   const cleanedArray = collection.tokens.map(token => {
-    const { tokenId, attributes, rarity } = token.token;
+    const { tokenId, attributes } = token.token;
     return {
       tokenId,
-      rarity,
       traits: attributes.map(attr => ({ key: attr.key, value: attr.value })),
     };
   });
