@@ -6,6 +6,8 @@
 npm i
 ```
 
+Create .env file, you can copy test credentials from the .env.example
+
 ## Run
 
 ```bash

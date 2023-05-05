@@ -1,5 +1,5 @@
 const sdk = require('api')('@reservoirprotocol/v3.0#2l6fslh5fu4vc');
-const API_KEY = '669140fd-f9cb-5e2a-8c37-ab75edbaab17'
+const API_KEY = process.env.API_KEY
 const COLLECTION_ID = '0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d'
 
 async function fetchTokens(offset = 0) {
